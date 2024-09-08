@@ -12,8 +12,7 @@ int main() {
     }
     else if(child == 0) {
         //child process
-         execl("/bin/ls", "ls", NULL);
-
+         execl("/bin/echo","echo", "Hello from child", NULL);
     } else {
         //parent process
         wait(NULL);
