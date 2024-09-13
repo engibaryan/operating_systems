@@ -25,6 +25,8 @@ int main() {
     printf("%d ", array_ptr[i]);
    }
    printf("\n");
+
+    return 0;
 }
 
 // We declare an integer array myArray with 5 values.
