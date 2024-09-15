@@ -25,7 +25,7 @@ int main() {
 
    //parent process
 
-    int status;
+    int status; // to capture exit status
     //waiting for first child to complete
     pid_t wait_pid1 = waitpid(child, &status,0);
     if(WIFEXITED(status)){ // WIFEXITED returns true if child process terminated normally
